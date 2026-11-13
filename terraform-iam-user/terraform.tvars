@@ -1,0 +1,5 @@
+aws_region      = "us-east-1"
+aws_profile     = "default"
+iam_user_name   = "terraform-demo-user"
+iam_group_name  = "terraform-demo-developers"
+s3_bucket_name  = "my-first-unique-s3-bucket"

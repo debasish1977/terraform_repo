@@ -1,0 +1,29 @@
+Internet
+   |
+   v
+Application Load Balancer
+Public Subnets
+   |
+   v
+ECS Service
+   |
+   +---- ECS Task 1 (Spring Boot container)
+   +---- ECS Task 2
+   +---- ECS Task N
+        Private Subnets
+             |
+             +---- CloudWatch Logs
+             +---- ECR
+             +---- RDS / DynamoDB / Kafka / S3 etc.
+
+ECS Cluster
+     |
+     +--- ECS Service
+             |
+             +--- Task Definition
+                     |
+                     +--- Docker Image
+                     +--- CPU / Memory
+                     +--- IAM Role
+                     +--- Environment variables
+                     +--- Secrets
